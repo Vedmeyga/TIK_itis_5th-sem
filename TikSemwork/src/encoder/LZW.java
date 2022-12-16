@@ -20,7 +20,7 @@ public class LZW {
         for (int i = 0; i < alphabet.size(); i++) {
             dictionary.put(alphabet.get(i), convertToBinary(i));
         }
-        System.out.println(dictionary);
+        //System.out.println(dictionary);
 
         String foundChars = "";
         StringBuilder result = new StringBuilder();
