@@ -34,8 +34,10 @@ public class Encoder {
             list.add(transform);
             System.out.println(transform);
         }
+        
         //sorting words lexicographically
         List<String> sortedList = list.stream().sorted().collect(Collectors.toList());
+        
         //building a sequence from the last symbols of each word
         StringBuilder resultSequence = new StringBuilder();
         int position = -1;
@@ -47,6 +49,7 @@ public class Encoder {
                 position = i;
             }
         }
+        
         //passing the transformed word and position of the original message
         List<String> results = new ArrayList<>();
         results.add(resultSequence.toString());
